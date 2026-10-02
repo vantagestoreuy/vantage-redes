@@ -1,1 +1,18 @@
-{"posts":[]}
+{
+  "posts": [
+    {
+      "id": "prueba-sistema",
+      "fecha_hora": "2026-10-02T01:30:00-03:00",
+      "tipo": "imagen",
+      "plataformas": [
+        "instagram",
+        "facebook"
+      ],
+      "medios": [
+        "posts/prueba/prueba.jpg"
+      ],
+      "caption": "Prueba del sistema (no se publica)",
+      "estado": "pausado"
+    }
+  ]
+}
