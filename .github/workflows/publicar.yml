@@ -1,0 +1,40 @@
+name: Publicar en redes
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Publicar lo que toca
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+        run: node publicar.mjs
+
+      - name: Guardar registro de publicados
+        if: always()
+        run: |
+          git config user.name "vantage-bot"
+          git config user.email "vantage-bot@users.noreply.github.com"
+          git add estado.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Registro de publicaciones"
+          git pull --rebase origin main
+          git push

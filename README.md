@@ -1,6 +1,9 @@
-# Vantage UY — cola de publicaciones
+# Vantage UY — publicación automática
 
-Este repo lo actualiza Claude todos los días. n8n lee `cola.json` (vía GitHub Pages) y publica en Instagram y Facebook.
+- Claude arma el contenido cada mañana y lo agrega a `cola.json` con sus imágenes en `posts/AAAA-MM-DD/`.
+- GitHub Actions (`.github/workflows/publicar.yml`) corre cada 15 minutos y publica en Instagram y Facebook lo que ya llegó a su hora.
+- `estado.json` registra qué se publicó y los errores.
 
-- Para frenar una publicación: editá `cola.json` y cambiá `"estado": "aprobado"` por `"estado": "pausado"`.
-- Las imágenes de cada día están en `posts/AAAA-MM-DD/`.
+**Frenar una publicación:** editá `cola.json` y cambiá `"estado": "aprobado"` por `"estado": "pausado"`.
+**Ver qué pasó:** pestaña Actions del repo (verde = bien, rojo = hubo un error; tocá la corrida para ver el detalle).
+**Token:** se guarda en Settings → Secrets and variables → Actions → `META_TOKEN`.
