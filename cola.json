@@ -1,18 +1,61 @@
 {
   "posts": [
     {
-      "id": "prueba-sistema",
-      "fecha_hora": "2026-10-02T01:30:00-03:00",
-      "tipo": "imagen",
+      "id": "2026-10-03-muda-story-encuesta",
+      "fecha_hora": "2026-10-03T17:30:00-03:00",
+      "tipo": "story",
+      "plataformas": [
+        "instagram"
+      ],
+      "medios": [
+        "posts/2026-10-03-muda/story-encuesta.jpg"
+      ],
+      "caption": "",
+      "estado": "aprobado"
+    },
+    {
+      "id": "2026-10-03-muda-carrusel",
+      "fecha_hora": "2026-10-03T19:30:00-03:00",
+      "tipo": "carrusel",
       "plataformas": [
         "instagram",
         "facebook"
       ],
       "medios": [
-        "posts/prueba/prueba.jpg"
+        "posts/2026-10-03-muda/carrusel-1.jpg",
+        "posts/2026-10-03-muda/carrusel-2.jpg",
+        "posts/2026-10-03-muda/carrusel-3.jpg",
+        "posts/2026-10-03-muda/carrusel-4.jpg",
+        "posts/2026-10-03-muda/carrusel-5.jpg"
       ],
-      "caption": "Prueba del sistema (no se publica)",
-      "estado": "pausado"
+      "caption": "¿Llegó la primavera y tu casa se llenó de pelos? 🐾 No es tu imaginación: es la muda.\n\nTe dejamos 4 pasos simples para atravesarla con menos pelo en el sillón, la ropa y el piso. Y al final, cuándo conviene consultar al veterinario.\n\nGuardá este post para tenerlo a mano 📌\n\n¿Querés el cepillo a vapor? Promo 2 unidades por $1.300. Escribinos por WhatsApp al 092 998 856. Envíos a todo Uruguay.\n\n#mascotasuruguay #perrosuruguay #gatosuruguay #mudadepelo #cuidadodemascotas #cepilladodemascotas #montevideo #vantageuy",
+      "estado": "aprobado"
+    },
+    {
+      "id": "2026-10-04-muda-story-sabias",
+      "fecha_hora": "2026-10-04T15:30:00-03:00",
+      "tipo": "story",
+      "plataformas": [
+        "instagram"
+      ],
+      "medios": [
+        "posts/2026-10-03-muda/story-sabias.jpg"
+      ],
+      "caption": "",
+      "estado": "aprobado"
+    },
+    {
+      "id": "2026-10-05-muda-story-cortapelo",
+      "fecha_hora": "2026-10-05T16:30:00-03:00",
+      "tipo": "story",
+      "plataformas": [
+        "instagram"
+      ],
+      "medios": [
+        "posts/2026-10-03-muda/story-cortapelo.jpg"
+      ],
+      "caption": "",
+      "estado": "aprobado"
     }
   ]
 }
